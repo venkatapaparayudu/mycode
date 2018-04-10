@@ -1,6 +1,8 @@
 FROM centos:latest
 MAINTAINER yugandhar
 
+RUN yum repolist
+
 RUN yum -y install mysqld
 
 EXPOSE 3306
