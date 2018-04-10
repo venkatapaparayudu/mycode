@@ -3,10 +3,10 @@ MAINTAINER yugandhar
 
 RUN yum repolist
 
-RUN yum -y install mysqld
+RUN yum -y install httpd
 
-EXPOSE 3306
+EXPOSE 80
 
-RUN echo "mysqld" >> /root/.bashrc
+RUN echo "httpd" >> /root/.bashrc
 
 CMD ["/bin/bash"]
